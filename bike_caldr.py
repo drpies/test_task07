@@ -11,7 +11,7 @@ if year % 4 == 0:
 
 try:
     if month < 1 or month > 12:
-        raise ValueError('nvalid month number');
+        raise ValueError('invalid month number');
     daysInMonth = daysInMonthList[month]
     if day < 1 or day > daysInMonth:
         raise ValueError('invalid day number');
@@ -19,4 +19,4 @@ try:
 except ValueError:
     dateValid = False
 
-print(str(year) + ' ' + str(month) + ' ' + str(day) + ' is ' + ('' if dateValid else 'This NOT ') + 'grisha\'s calendar date')
+print(str(year) + ' ' + str(month) + ' ' + str(day) + '  This is ' + ('' if dateValid else 'NOT ') + 'grisha\'s calendar date')
